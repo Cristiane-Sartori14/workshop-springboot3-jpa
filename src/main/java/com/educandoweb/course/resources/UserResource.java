@@ -14,9 +14,9 @@ import com.educandoweb.course.entities.User;
 public class UserResource {
 	
 	@GetMapping
-	  public ResponseEntity<List<User>> findAll() {
-        User u = new User(1L, "Maria", "maria@gmail.com", "9999999", "12345");
-        List<User> list = List.of(u); 
-        return ResponseEntity.ok().body(list);
-    }
+	public ResponseEntity<List<User>> findAll() {
+	    User u = new User(1L, "Maria", "maria@gmail.com", "9999999", "12345");
+	    List<User> list = List.of(u); 
+	    return ResponseEntity.ok().body(list);
+	}
 }
