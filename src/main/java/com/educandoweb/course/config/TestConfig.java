@@ -14,7 +14,7 @@ import com.educandoweb.course.repositories.UserRepository;
 @Profile("test")
 public class TestConfig implements CommandLineRunner { /*permite executar o código assim que a 
 * aplicação Spring Boot é iniciada. O método `run()` é chamado automaticamente após o carregamento
-* * do contexto da aplicação.*/
+*do contexto da aplicação.*/
 	
 	@Autowired /*Anotação do Spring que injeta automaticamente a dependência do UserRepository. 
 	*Isso significa que o Spring fornece uma instância dessa interface sem você precisar criar com new*/
@@ -29,5 +29,6 @@ public class TestConfig implements CommandLineRunner { /*permite executar o cód
 		userRepository.saveAll(Arrays.asList(u1, u2));
 	}
 	
+
 	
 }
