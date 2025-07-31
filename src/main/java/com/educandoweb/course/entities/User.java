@@ -30,7 +30,7 @@ public class User implements Serializable {
 	
 	@JsonIgnore	
 	//instanciando pois um usuario pode ter varios pedidos
-	@OneToMany(mappedBy = "client")
+	@OneToMany(mappedBy = "client") // Um cliente tem muitos pedidos
 	private List<Order> orders = new ArrayList<>();
 	
 	public User() {
